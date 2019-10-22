@@ -1,7 +1,7 @@
 # My Awesome ReadMe
 
--Some
--bullet
--points
+- Some
+- bullet
+- points
  
  *yay*
