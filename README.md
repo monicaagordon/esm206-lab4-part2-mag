@@ -1,1 +1,7 @@
-# esm206-lab4-part2-mag
+# My Awesome ReadMe
+
+-Some
+-bullet
+-points
+ 
+ *yay*
