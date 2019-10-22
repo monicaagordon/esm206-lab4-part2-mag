@@ -13,3 +13,31 @@ Here we'll practice creating some interactive graphs and tables using built in d
 
 - Interactive plots: {plotly}
 - Interactive tables: {DT}
+```{r, include=FALSE}
+# Attach packages:
+
+library(tidyverse)
+library(DT)
+library(plotly)
+
+```
+
+### A. Interactive graph of iris dimensions
+
+Using Edgar Anderson's famous 'iris' dataset
+```{r, echo=FALSE}
+
+iris_graph <- ggplot(data = iris, aes(x = Petal.Width, y = Petal.Length)) +
+  geom_point (aes(size = Sepal.Width,
+                 color = Species)) +
+  theme_minimal() +
+  labs (x = "Petal width (cm)",
+        y = "Petal length 9 cm)",
+        title = "My Petal Graph")
+
+# iris_graph
+
+ggplotly(iris_graph)
+
+```
+
